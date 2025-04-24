@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixa houver</title>
+      <style>
+        .caixa {
+          background-color: lightcyan;
+          width: 250px;
+          height: 250px;
+          border: 2px solid rgb(0, 0, 0);
+          border-radius: 0;
+          font-family: sans-serif;
+          position: relative;
+          text-align: center;
+        }
+    
+        .mensagem-container {
+          position: absolute;
+          top: 10px;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+    
+        .mensagem-topo {
+          color: rgb(0, 0, 0);
+          transition: color 0.3s ease;
+          cursor: pointer;
+        }
+    
+        .mensagem-topo:hover {
+          color: red;
+        }
+    
+        .mensagem-centro {
+          display: none;
+          color: rgb(255, 0, 0);
+          position: absolute;
+    left: 50%;
+    top: 350%;
+          transform: translate(-50%, -50%);
+        }
+    
+        .mensagem-container:hover .mensagem-centro {
+          display: block;
+        }
+        h1{
+        font-size: 50px;
+        color: green;
+        font-family: sans-serif;
+      
+        }
+      </style>
+    </head>
+    <body>
+        <h1>Exemplo Houver</h1>
+        <h4>Exemplo de houver nesta caixa</h4>
+    
+    <div class="caixa">
+      <div class="mensagem-container">
+        <span class="mensagem-topo">Passe o mouse AQUI</span>
+        <div class="mensagem-centro">Outra frase aparece!</div>
+      </div>
+    </div>
+    
+    </body>
+    </html>
+    
+    

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Exemplo de Pseudo Elemento</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      color: green;
+      background-color: white;
+    }
+
+    h1 {
+      font-size: 40px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li::before {
+      content: ">> ";
+      color: red;
+      font-weight: bold;
+    }
+
+    li a {
+      color: red;
+      text-decoration: none;
+    }
+
+    li a::after {
+      content: " [Link]";
+      color: gray;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Exemplo de Pseudo Elemento</h1>
+
+  <ul>
+    <li><a href="https://github.com/eduribeiros">Repositorio do GitHub</a></li>
+    <li><a href="https://www.youtube.com/channel/UCfIXdjDQH9Fau7y99_Orpjw">Canal do YouTube</a></li>
+    <li><a href="https://uvv.br">Site da UVV</a></li>
+  </ul>
+
+</body>
+</html>
