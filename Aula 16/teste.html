@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+.caixaSimples {
+    border-radius: 10px;
+    border: solid 3px;
+    padding: 10px;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap align-items;
+    margin: 15px;
+}</style>
+</head>
+<body>
+    <div class="caixaSimples" style="flex-basis: 950px;">
+        <h1>Dados pessoais</h1>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required><br>
+
+                    <label for="idade">Idade:</label>
+                    <input type="number" id="idade" name="idade" min="18" max="65">
+                    <br>
+                    <label for="email">E-mail (patter):</label>
+                    <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"> <br>
+
+                    <label for="cor">Escolha uma cor:</label>
+                    <input type="color" id="cor" name="cor"> <br>
+                    <label for="data-hora">Data e Hora:</label>
+                    <input type="datetime-local" id="data-hora" name="data-hora" value="2022-04-5T14:30"><br>
+                    <label for="arquivo">Selecione um arquivo:</label>
+                    <input type="file" id="arquivo" name="arquivo"><br>
+    </div>
+</body>
+</html>
